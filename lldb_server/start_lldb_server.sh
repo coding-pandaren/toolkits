@@ -8,7 +8,7 @@ umask 0002
 
 LLDB_DIR=/data/local/tmp/lldb_server
 LISTENER_SCHEME=unix-abstract
-DOMAINSOCKET_DIR=LLDB_DIR
+DOMAINSOCKET_DIR=$LLDB_DIR
 PLATFORM_SOCKET=lldb_debug.sock
 LOG_CHANNELS="lldb process:gdb-remote packets"
 
