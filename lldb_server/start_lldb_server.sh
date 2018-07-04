@@ -38,4 +38,5 @@ cat </dev/null >"$LLDB_DEBUGSERVER_LOG_FILE" 2>"$PLATFORM_LOG_FILE"
 
 cd $TMP_DIR # change cwd
 
+#notice:if faile change the PLATFORM_SOCKET
 $BIN_DIR/lldb-server platform --server --listen $LISTENER_SCHEME://$DOMAINSOCKET_DIR/$PLATFORM_SOCKET --log-file "$PLATFORM_LOG_FILE" --log-channels "$LOG_CHANNELS" </dev/null >$LOG_DIR/platform-stdout.log 2>&1
